@@ -1,0 +1,16 @@
+{
+  "name": "SimpleTheme",
+  "type": "THEME",
+  "author": "Tom",
+  "version": "1.0.0",
+  "overlays": ["hud"],
+  "components": [
+    { "name": "Watermark", "enabled": true },
+    { "name": "ArrayList", "enabled": true },
+    { "name": "Notifications", "enabled": true }
+  ],
+  "files": {
+    "hud": "hud.html",
+    "style": "style.css"
+  }
+}
