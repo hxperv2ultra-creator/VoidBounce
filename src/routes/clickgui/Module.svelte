@@ -154,11 +154,14 @@
       ease color 0.2s;
 
       color: var(--clickgui-text-dimmed-color);
-      text-align: center;
+      text-align: left;
       font-size: 12px;
       font-weight: 500;
       position: relative;
-      padding: 10px;
+      padding: 10px 40px 10px 14px;
+      margin-bottom: 4px;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.04);
 
       &.highlight::before {
         content: "";
@@ -176,13 +179,17 @@
       }
 
       &.enabled {
-        color: var(--clickgui-module-enabled-color);
+        color: var(--clickgui-text-color);
+        background-color: rgba(255, 255, 255, 0.16);
+        box-shadow: inset 3px 0 0 var(--accent-color);
       }
     }
 
     .settings {
       background-color: var(--clickgui-module-settings-background-color);
       border-left: solid 4px var(--clickgui-module-settings-border-color);
+      border-radius: 6px;
+      margin-bottom: 6px;
       padding: 0 11px 0 7px;
     }
 
